@@ -2,12 +2,23 @@
 	margin-top:0;
 }
 
+ul.nav li.dropdown:hover > ul.dropdown-menu{
+    display: block;    
+}
+a.menu:after, .dropdown-toggle:after {
+    content: none;
+}
 .spaced {
     position:relative;
     top:3em;
 }
 
+
 .event-datetime {
     font-size:2em;
     font-weight:300;
+}
+
+.slide#ideas .info h2 {
+	 margin-top:40px;
 }
