@@ -9,11 +9,10 @@ $(function () {
     });
 
     // Flex
-    /* Sina commenting out
     if ($(".flexslider").length) {
         $('.flexslider').flexslider();
     }
-    */
+    
     servicesCircle.initialize();
 
     staticHeader.initialize();
