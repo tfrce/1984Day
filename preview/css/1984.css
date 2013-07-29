@@ -8,3 +8,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 a.menu:after, .dropdown-toggle:after {
     content: none;
 }
+.spaced {
+    position:relative;
+    top:3em;
+}
+
+.slide#ideas .info h2 {
+	 margin-top:100px;
+}
