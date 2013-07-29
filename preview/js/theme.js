@@ -1,3 +1,26 @@
+$(function () {
+    $(window).scroll(function() {
+        if ($(".navbar").offset().top>30) {
+            $(".navbar-inner").addClass("sticky");
+        }
+        else {
+            $(".navbar-inner").removeClass("sticky");
+        }
+    });
+
+    // Flex
+    /* Sina commenting out
+    if ($(".flexslider").length) {
+        $('.flexslider').flexslider();
+    }
+    */
+    servicesCircle.initialize();
+
+    staticHeader.initialize();
+
+    portfolioItem.initialize();
+});
+
 var portfolioItem = {
     initialize: function () {
         var $container = $("#portfolio_tem .left_box");
