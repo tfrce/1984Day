@@ -1,3 +1,9 @@
 .slide#ideas .info h2 {
 	margin-top:0;
 }
+
+.spaced {
+    position:relative;
+    top:3em;
+}
+
