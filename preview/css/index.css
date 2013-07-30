@@ -632,7 +632,7 @@
     background: #efefef;
     border: 1px solid #ccc;
     border-radius: 1px;
-    top: -37px;
+    top: -36px;
     color: #444;
     content: attr(count);
     display: block;
