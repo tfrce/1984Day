@@ -27,66 +27,77 @@
           "img": "hoback.jpg",
           "description": "Cullen Hoback is Director of 'Terms and Conditions May Apply', a documentary exploring the loss of online privacy."
         }
-      ]
+      ],
+      "twitter": "RestoreThe4thSF"
   	}, {
       "name": "New York",
       "time": "3pm",
       "where":"Bryant Park, 42nd Street 6th Avenue",
       "image": "",
-      "event_id": 508963769175983
+      "event_id": 508963769175983,
+      "twitter": "RestoreThe4thNY"
     }, {
       "name": "Los Angeles",
       "time": "1pm",
       "where":"3rd Street Promenade",
       "image": "",
-      "event_id": 206984139458886
+      "event_id": 206984139458886,
+      "twitter": "RestoreThe4thLA"
     }, {
       "name": "San Diego",
       "time": "11am",
       "where":"Bea Fountain, Balboa Park",
       "image": "",
-      "event_id": 356709431122317
+      "event_id": 356709431122317,
+      "twitter": "RestoreThe4thSD"
     }, {
       "name": "Sacramento",
       "time": "3pm",
       "where":"Cesar Chavez Park",
       "image": "",
-      "event_id": 146490982217007
+      "event_id": 146490982217007,
+      "twitter": ""
     }, {
       "name": "Savannah",
       "time": "2pm",
       "where":"Reynolds Square, Abercorn Street",
       "image": "",
-      "event_id": 687713187912713
+      "event_id": 687713187912713,
+      "twitter": ""
     }, {
       "name": "Boston",
       "time": "3pm",
       "where":"Boston Regional Intelligence Centre",
       "image": "",
-      "event_id": 549769355088618
+      "event_id": 549769355088618,
+      "twitter": "RestoreThe4thMA"
     }, {
       "name": "Buffalo",
       "time": "TBA",
       "where":"TBA",
       "image": "",
-      "event_id": 212565428900036
+      "event_id": 212565428900036,
+      "twitter": ""
     }, {
       "name": "Sunbury",
       "time": "12pm",
       "where":"Veterans Memorial Bridge",
       "image": "",
-      "event_id": 588749281176821
+      "event_id": 588749281176821,
+      "twitter": ""
     }, {
       "name": "Austin",
       "time": "7:30pm",
       "where":"The Embarcadero",
       "image": "",
-      "event_id": 501911309885912
+      "event_id": 501911309885912,
+      "twitter": "RestoreThe4thATX"
     }, {
       "name": "Bellingham",
       "time": "6pm",
       "where":"Bellingham Public Market",
       "image": "",
-      "event_url": "http://www.restorethe4thbellingham.org/1984-da/"
+      "event_url": "http://www.restorethe4thbellingham.org/1984-da/",
+      "twitter": "RestoreThe4thMA"
     }]
 }
