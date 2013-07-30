@@ -15,7 +15,7 @@ var cityTemplate = fs.readFileSync('city.template', 'utf8');
 
 _.each(cities, function(city){
   var citySlug = convertToSlug(city.name);
-  var cityPage = _.template(cityTemplate, {city: city});
+  var cityPage = _.template(cityTemplate, {city: city, citySlug:citySlug});
 
   fs.writeFileSync('city/' + citySlug + '.html', cityPage, 'utf8');
 

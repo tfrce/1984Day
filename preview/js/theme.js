@@ -41,6 +41,13 @@ var portfolioItem = {
 
 var staticHeader = {
     initialize: function () {
+        var citySlug = $('meta[name="city"]').attr('content');
+        $(document).ready(function(){
+
+        if(citySlug){
+            $('[cityslug="'+citySlug+'"]').addClass('active');
+        }
+        })
         if ($(".navbar-static-top").length) {
             $("body").css("padding-top", 0);
         }
