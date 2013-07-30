@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../css/index.css" type="text/css" media="screen" />
     <link rel="stylesheet" type="text/css" href="../css/features.css">
     <link rel="stylesheet" href="../css/contact.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../css/sign-up.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="../css/1984.css" type="text/css" media="screen" />
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
@@ -71,21 +72,27 @@
       </div>
     </div>
 
-    <section id="feature_slider" class="">
-        <!-- 
-            Each slide is composed by <img> and .info
-            - .info's position is customized with css in index.css
-            - each <img> parallax effect is declared by the following params inside its class:
-            
-            example: class="asset left-472 sp600 t120 z3"
-            left-472 means left: -472px from the center
-            sp600 is speed transition
-            t120 is top to 120px
-            z3 is z-index to 3
-            Note: Maintain this order of params
+    <!-- Sign In Option 1 -->
+    <div id="sign_up1">
+        <div class="container">
+            <div class="row">
+                <div class="span12 header">
+                    <h4>Rally for Privacy this Sunday in San Diego</h4>
+                    <div class="span3 division" style="border-top: 1px solid rgb(104, 167, 196); margin: 30px auto 30px"></div>
+                    <p><strong>This Sunday is 8/4. We're declaring it "1984 Day" and rallying for privacy.</strong></p>
+                    <p>Join thousands of US citizens across the country and protest surveillance.</p>
+                    
+                <div class="span3 division" style="border-top: 1px solid rgb(104, 167, 196); margin: 30px auto 30px"></div>
+                    <a data-event-id="520390394700141" href="https://www.facebook.com/events/520390394700141/" target="_blank" id="revp">
+                        <img onmouseover="this.src='../img/1984/rsvp-hover.png'" onmouseout="this.src='../img/1984/rsvp.png'" src="../img/1984/rsvp.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            For the backgrounds, you can combine from the bgs folder :D
-        -->
+    <section id="feature_slider" class="">
+
         <article class="slide" id="ideas" style="background: transparent url('../img/backgrounds/baby-blue.jpg') top center repeat-x; /*background-size:7% !important;*/">
         <div class="container">
             <div class="info header">
@@ -115,9 +122,15 @@
           <!--  <div class="section_header">
                 <h3 title="Sample tooltip" class="tooltipa">Share this page</h3>
             </div>-->
-            <div class="row" style="margin-top: 60px;">
+            <div class="row" style="margin-top: 20px;">
              <br />
              <div style="clear: both;"></div>
+
+             <div class="row" id="eventdetails">
+                <p><strong>Time and location:</strong>  11am at Bea Fountain, Balboa Park, San Diego</p>
+                
+                <p style="padding-top:30px; font-size:25px"><strong>Share this event with your friends:</strong></p>
+            </div>
 
             <div id="socfooter" class="down" style="width: 186px; margin: auto;">
                 <a href="https://twitter.com/home?status=This Sunday, thousands around the country are rallying against surveillance. Join the event in San Diego -> http://1984day.com/san-diego" count="0" target="_blank" id="tweet-box" class="twitter-button social-count">
