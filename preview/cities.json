@@ -3,7 +3,8 @@
   	{
   		"name": "San Francisco",
   		"time": "2pm",
-  		"where":"The Embarcadero",
+  		"where":"Vaillancourt Fountain, The Embarcadero",
+      "latlong": "37.794906,-122.394691",
   		"image": "",
       "event_id": 520390394700141,
       "speakers": [{
