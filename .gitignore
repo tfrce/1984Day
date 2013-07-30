@@ -1,3 +1,5 @@
+node_modules/
+preview/node_modules/
 # vim swapfiles
 *.swp
 _site/*
