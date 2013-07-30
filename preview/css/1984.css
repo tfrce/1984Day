@@ -21,14 +21,14 @@ a.menu:after, .dropdown-toggle:after {
 }
 
 .slide#ideas .info h2 {
-	margin-top:1.5em;
-    opacity:0.7;
+    opacity:0.9;
+    margin-bottom:0.8em;
 }
 
 .splash {
     position:relative;
     top:0.5em;
-    font-size:4em;
+    font-size:3em;
     font-weight:bold;
 }
 
