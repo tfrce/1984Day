@@ -70,5 +70,9 @@ var social = {
             var count = data.data[0].total_count;
             $('.facebook-button').attr('count', count);
         })
+        $.getJSON('http://share.taskforce.is/?type=twitter', function(data) {
+            var count = data.data[0].total_count;
+            $('.twitter-button').attr('count', count);
+        })
     }
 }
