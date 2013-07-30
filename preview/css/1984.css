@@ -131,3 +131,53 @@ body.event #features .option3 .feature .img {
     transition:0.15s ease-in all;
     opacity:1;
 }
+
+article.slide#ideas {
+	background: transparent url('../img/backgrounds/indigo_rpt.jpg') top center repeat-x; background-size:11% !important;
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+	.slide#ideas .info h2 {
+		font-size: 20px		!important;
+	}
+	.slide#ideas .info h2.splash {
+		font-size: 30px 	!important;
+		font-weight: bold;
+	}
+	article.slide#ideas {
+		background-size:14% !important;
+	}
+}
+
+@media (max-width: 767px) {
+	#feature_slider {
+		display: block;
+		margin-left:-20px;
+		height: 450px;
+		margin-bottom:30px;
+	}
+	article.slide#ideas {
+		background-size:24% !important;
+	}
+	.slide#ideas .info img {
+		display: none;
+	}
+
+	.slide#ideas .info h2 {
+		font-size: 20px		!important;
+	}
+	.slide#ideas .info h2.splash {
+		font-size: 30px 	!important;
+		font-weight: bold;
+	}
+	.slide#ideas .info {
+		top:50px;
+	}
+	.slide#ideas {
+		width: 90%;
+		padding:5%;
+		height:420px;
+	}
+
+}
+
