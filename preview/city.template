@@ -271,13 +271,6 @@ var speakers = _.map(city.speakers, function(speaker){return speaker.name}).join
                         <a count="0" href="https://plus.google.com/share?url=http://1984day.com/<%=citySlug%>" target="_blank"  class="social-count google-button"> 
                             <div id="sgplus" ></div>
                         </a>
-                
-        <script type="text/javascript">
-          $(document).ready(function(){$("#facebook").attr("onclick","openFacebook(); return false;");$("#tweet-box").attr("onclick","openTwitter(); return false;")})
-          function randomize(e){var t=e.length,n,r;if(t===0)return false;while(--t){n=Math.floor(Math.random()*(t+1));r=e[t];e[t]=e[n];e[n]=r}}
-          function openFacebook(){var e="https://www.facebook.com/sharer/sharer.php?u=http://1984day.com/<%=citySlug%>";window.open(e,"Share on Facebook","width=626,height=436");return false}
-          function openTwitter(){var e=["sinak","neutralthoughts","tforce"];randomize(e);var t="https://twitter.com/home?status=This Sunday, thousands around the country are rallying against surveillance. Join the event in <%=city.name%> -> http://1984day.com/<%=citySlug%>&related=Restore_the4th%2C<%=city.twitter%>%2C"+e[0]+"%2C"+e[1]+"%2C";window.open(t,"Twitter","width=550,height=420");return false}
-        </script>
 
                     </div>   
                     <div style="clear: both;"></div>
@@ -312,7 +305,12 @@ var speakers = _.map(city.speakers, function(speaker){return speaker.name}).join
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/theme.js"></script>
-
-    <script type="text/javascript" src="../js/index-slider.js"></script>    
+    <script type="text/javascript" src="../js/index-slider.js"></script>  
+    <script type="text/javascript">
+      $(document).ready(function(){$("#facebook").attr("onclick","openFacebook(); return false;");$("#tweet-box").attr("onclick","openTwitter(); return false;")})
+      function randomize(e){var t=e.length,n,r;if(t===0)return false;while(--t){n=Math.floor(Math.random()*(t+1));r=e[t];e[t]=e[n];e[n]=r}}
+      function openFacebook(){var e="https://www.facebook.com/sharer/sharer.php?u=http://1984day.com/<%=citySlug%>";window.open(e,"Share on Facebook","width=626,height=436");return false}
+      function openTwitter(){var e=["sinak","neutralthoughts","tforce"];randomize(e);var t="https://twitter.com/home?status=This Sunday, thousands around the country are rallying against surveillance. Join the event in <%=city.name%> -> http://1984day.com/<%=citySlug%>&related=Restore_the4th%2C<%=city.twitter%>%2C"+e[0]+"%2C"+e[1]+"%2C";window.open(t,"Twitter","width=550,height=420");return false}
+    </script>  
 </body>
 </html>
