@@ -36,38 +36,68 @@ a.menu:after, .dropdown-toggle:after {
     font-family:'Lato', sans-serif;
 }
 
-body.event div.info h2.splash {
-	font-size: 2.5em;
+body.event .slide#ideas .info h2.splash {
+	font-size: 3em;
+	margin-bottom: 1em;
 }
 
+body.event .slide#ideas div.header {
+	top:100px;
+}
 
-body.event div.info h2 {
-	font-size: 1.5em;
+body.event div.header p {
+	font-size: 1.6em;
+	line-height: 140%;
+	margin: 15px 0;	
 }
 
 body.event .slide#ideas div.info  h2 {
 	color: #333;
 }
 
+body.event section#feature_slider {
+	margin-bottom:0;
+}
 
-.buttonhover a {
-  position:relative;
-  display: inline-block;
+body.event section.sharebar {
+	color: #fff;
 }
-.buttonhover a:hover:after {
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-  border-radius: 3px;
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+body.event section.sharebar div.background {
+	min-height:80px;
+	padding-top:15px;
 }
-.buttonhover img {
-  display: block;
+
+body.event section.sharebar p{
+	font-size: 2em;
+	text-align: center;
+}
+
+body.event .section_header {
+	margin-bottom: 30px;
+}
+
+body.event #features .option3 .feature{ 
+	cursor: auto;
+}
+
+
+body.event #clients, body.event #features {
+	margin-top:30px;
+}
+
+body.event #features .option3 .feature .text p {
+	text-align: left;
+}
+
+body.event #features .option3 .feature {
+	padding-bottom: 28px;
+	margin-bottom: 25px;
+}
+body.event #features .option3 .feature .img {
+	margin: 32px auto 27px;
+}
+@media (min-width: 980px) {
+	body.event #features .option3 .feature.shiftright {
+		margin-left: 180px;		
+	}
 }
