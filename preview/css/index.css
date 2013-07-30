@@ -704,10 +704,18 @@
     #sfb{
         background-position:70% 0 ;
     }
-    #sfb:hover{
-        background-position:70% 100% ;
-    }
-    
+    #sfb {
+    border-bottom:0px solid #FFFFFF;
+    transition:0.2s ease-out all;
+    opacity:0.8;
+}
+
+#sfb:hover {
+    background-position:70% 0%;
+    border-bottom:2px solid #343437;
+    transition:0.15s ease-in all;
+    opacity:1;
+}
     #sbh{
         background-position:60% 0 ;
     }
@@ -718,10 +726,19 @@
         #stwit{
         background-position:50% 0 ;
     }
-    #stwit:hover{
-        background-position:50% 100% ;
-    }
     
+    #stwit {
+    border-bottom:0px solid #FFFFFF;
+    transition:0.2s ease-out all;
+    opacity:0.8;
+}
+
+#stwit:hover {
+    background-position:50% 0%;
+    border-bottom:2px solid #343437;
+    transition:0.15s ease-in all;
+    opacity:1;
+}
     
         #sem{
         background-position:40% 0 ;
