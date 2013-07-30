@@ -92,6 +92,7 @@ body.event #features .option3 .feature .text p {
 body.event #features .option3 .feature {
 	padding-bottom: 28px;
 	margin-bottom: 25px;
+	height: 385px;
 }
 body.event #features .option3 .feature .img {
 	margin: 32px auto 27px;
