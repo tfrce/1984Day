@@ -3,7 +3,8 @@
   	{
   		"name": "San Francisco",
   		"time": "2pm",
-  		"where":"The Embarcadero",
+  		"where":"Vaillancourt Fountain, The Embarcadero",
+      "latlong": "37.794906,-122.394691",
   		"image": "",
       "event_id": 520390394700141,
       "speakers": [{
@@ -32,7 +33,7 @@
   	}, {
       "name": "New York",
       "time": "3pm",
-      "where":"Bryant Park, 42nd Street 6th Avenue",
+      "where":"The Bryant Park",
       "image": "",
       "event_id": 508963769175983,
       "twitter": "RestoreThe4thNY"
@@ -67,7 +68,7 @@
     }, {
       "name": "Boston",
       "time": "3pm",
-      "where":"Boston Regional Intelligence Centre",
+      "where":"Schroeder Plaza, Boston",
       "image": "",
       "event_id": 549769355088618,
       "twitter": "RestoreThe4thMA"
@@ -88,7 +89,7 @@
     }, {
       "name": "Austin",
       "time": "7:30pm",
-      "where":"The Embarcadero",
+      "where":"TBA",
       "image": "",
       "event_id": 501911309885912,
       "twitter": "RestoreThe4thATX"
