@@ -20,24 +20,3 @@ _.each(cities, function(city){
   fs.writeFileSync('city/' + citySlug + '.html', cityPage, 'utf8');
 
 });
-/*
-var packages = res.body.packages;
-var indexTemplate = fs.readFileSync('index.template', 'utf8');
-var indexPage = _.template(indexTemplate, {packages: packages});
-
-var htmlCompressionOptions = {
-	removeComments: true,
-	collapseBooleanAttributes: true,
-	collapseWhitespace: true,
-};
-
-indexPage = htmlMinifier.minify(indexPage, htmlCompressionOptions);
-indexPage = indexPage.replace('&nbsp;', ' ');
-
-fs.writeFileSync('index.html', indexPage, 'utf8');
-fs.writeFileSync('packages.json', JSON.stringify(res.body, null, 4), 'utf8');
-fs.writeFileSync('packages.min.json', JSON.stringify(res.body), 'utf8');
-
-var result = uglifyJs.minify(['cdnjs.handlebars.js', 'index.js']);
-fs.writeFileSync('min.js', result.code, 'utf8');
-*/
