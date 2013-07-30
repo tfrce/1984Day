@@ -80,10 +80,18 @@
         -->
         <article class="slide" id="ideas" style="background: transparent url('../img/backgrounds/baby-blue.jpg') top center repeat-x; /*background-size:7% !important;*/">
         <div class="container">
-            <div class="info">
-                <h2 class="splash">Rally For Privacy in <%= city.name %></h2>
-                <h2 style="margin-bottom:0"><%=city.time%> at <%=city.where%>, <%=city.name%></h2>
-                <h2>Speakers include: Daniel Ellsberg, Mark Klein, Jennifer Granick, Norman Solomon, and Cullen Hoback</h2>
+            <div class="info header">
+            <h2 class="splash"><strong>Rally for Privacy this Sunday in <%= city.name %></strong></h2>
+                <p><strong>Join thousands across the country in rallying for privacy and against NSA surveillance.</strong></p>
+                <p>This Sunday is 8/4. We're declaring it "1984 Day."</p>
+                <p ><strong>Location:</strong> <%=city.time%> at <%=city.where%>, <%=city.name%></p>
+
+                <% if(city.speakers) { 
+var speakers = _.map(city.speakers, function(speaker){return speaker.name}).join(', ');
+                    %>
+
+                <p><strong>Speakers:</strong> <%=speakers%></p>
+                <% }; %>
             </div>
 
 
@@ -107,7 +115,7 @@
 
             <div id="socfooter" class="down">
                 <a href="https://twitter.com/home?status=Dr.%20Joseph%20Bonneau%20Wins%20NSA%20Award%2C%20Criticizes%20NSA%20%20https%3A//www.eff.org/deeplinks/2013/07/dr-joseph-bonneau-wins-nsa-award-criticizes-nsa-0%20via%20%40EFF" count="0" target="_blank" class="twitter-button social-count">
-                
+
                     <div id="stwit"></div>
                 </a>
                 <a href="https://www.facebook.com/share.php?u=https%3A%2F%2Fwww.eff.org%2Fdeeplinks%2F2013%2F07%2Fdr-joseph-bonneau-wins-nsa-award-criticizes-nsa-0&t=Dr.+Joseph+Bonneau+Wins+NSA+Award%2C+Criticizes+NSA+" count="0" target="_blank"  class="social-count facebook-button">
@@ -121,7 +129,7 @@
             </div>   
             <div style="clear: both;"></div>
     </div>
-
+</div>
 <% if(city.speakers) { %>
 
 <div id="features" class="features_page">
@@ -134,68 +142,22 @@
             <!-- Features Row -->
             <div class="row">
                 <!-- Feature -->
-                <div class="span4 feature">
-                    <div class="img">
-                        <img src="../img/1984/ellsberg.jpg">
-                    </div>
-                    <div class="text">
-                        <h6>Daniel Ellsberg</h6>
-                        <p>
-                            Danniel Ellsberg is a former US military analyst, author, and activist. Mr. Ellsberg famously leaked the Pentagon Papers to The New York Times in 1971, revealing the systematic deception of four presidencies.
-                        </p>
-                    </div>
-                </div>
-                <!-- Feature -->
-                <div class="span4 feature">
-                    <div class="img">
-                        <img src="../img/1984/granick.jpg">
-                    </div>
-                    <div class="text">
-                        <h6>Jennifer Granick</h6>
-                        <p>
-                            Jennifer Granick is Director of Civil Liberties for the Center for Internet and Society at Stanford Law School. Jennifer Granick has written extensively about NSA surveillance, including a recent piece in the New York Times.
-                        </p>
-                    </div>
-                </div>
-                <!-- Feature -->
-                <div class="span4 feature last">
-                    <div class="img">
-                        <img src="../img/1984/klein.jpg">
-                    </div>
-                    <div class="text">
-                        <h6>Mark Klein</h6>
-                        <p>
-                            Mark Klein is the AT&T/NSA whistleblower who revealed in 2006 that AT&T was secretly cooperating with the NSA to divert communications to the intelligence agency, leading to the Hepting v. AT&T lawsuit.
-                        </p>
-                    </div>
-                </div>
-            </div>
+                <% 
+                var i = 0;
+                _.each(city.speakers,function(speaker){ %>
 
-            <div class="row">
-                <!-- Feature -->
-                <div class="span4 feature shiftright">
-                    <div class="img">
-                        <img src="../img/1984/solomon.jpg">
+                    <div class="span4 feature <%= i % 3 === 0 ? 'last' : '' %>">
+                        <div class="img">
+                            <img src="../img/1984/<%= speaker.img %>">
+                        </div>
+                        <div class="text">
+                            <h6><%= speaker.name %></h6>
+                            <p>
+                                <%= speaker.description %>
+                            </p>
+                        </div>
                     </div>
-                    <div class="text">
-                        <h6>Norman Solomon</h6>
-                        <p>
-                            Norman Soloman is an author journalist, politician, media critic and founder of the Institute for Public Accuracy.
-                        </p>
-                    </div>
-                </div>
-                <!-- Feature -->
-                <div class="span4 feature">
-                    <div class="img">
-                        <img src="../img/1984/hoback.jpg">
-                    </div>
-                    <div class="text">
-                        <h6>Cullen Hoback</h6>
-                        <p>
-                            Cullen Hoback is Director of "Terms and Conditions May Apply," a documentary exploring the loss of online privacy
-                        </p>
-                    </div>
-                </div>
+                <% }); i++; %>
             </div>
         </div>
     </div>
