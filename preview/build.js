@@ -5,40 +5,37 @@ var http = require('http');
 var htmlMinifier = require('html-minifier');
 var uglifyJs = require('uglify-js');
 
-superagent.get('https://s3.amazonaws.com/cdnjs-artifacts//packages.json?' + new Date().getTime(), function(res, textStatus, xhr){
-  var packages = res.body.packages;
-  var indexTemplate = fs.readFileSync('index.template', 'utf8');
-  var indexPage = _.template(indexTemplate, {packages: packages});
+function convertToSlug(Text) {return Text.toLowerCase().replace(/[^\w ]+/g,'').replace(/ +/g,'-');}
 
-  var htmlCompressionOptions = {
-  	removeComments: true,
-  	collapseBooleanAttributes: true,
-  	collapseWhitespace: true,
-  };
 
-  indexPage = htmlMinifier.minify(indexPage, htmlCompressionOptions);
-  indexPage = indexPage.replace('&nbsp;', ' ');
 
-  fs.writeFileSync('index.html', indexPage, 'utf8');
-  fs.writeFileSync('packages.json', JSON.stringify(res.body, null, 4), 'utf8');
-  fs.writeFileSync('packages.min.json', JSON.stringify(res.body), 'utf8');
+var cities = JSON.parse(fs.readFileSync('cities.json', 'utf8')).cities;
 
-  var result = uglifyJs.minify(['cdnjs.handlebars.js', 'index.js']);
-  fs.writeFileSync('min.js', result.code, 'utf8');
+
+_.each(cities, function(city){
+  var citySlug = convertToSlug(city.name);
+
+  fs.writeFileSync('city/' + citySlug + '.html', 'hello', 'utf8');
+
 });
+/*
+var packages = res.body.packages;
+var indexTemplate = fs.readFileSync('index.template', 'utf8');
+var indexPage = _.template(indexTemplate, {packages: packages});
 
-// I was rushing below r0fl
-var file = fs.createWriteStream("rss.xml");
-var request = http.get("http://s3.amazonaws.com/cdnjs-artifacts//rss", function(response) {
-  response.pipe(file);
-});
+var htmlCompressionOptions = {
+	removeComments: true,
+	collapseBooleanAttributes: true,
+	collapseWhitespace: true,
+};
 
+indexPage = htmlMinifier.minify(indexPage, htmlCompressionOptions);
+indexPage = indexPage.replace('&nbsp;', ' ');
 
+fs.writeFileSync('index.html', indexPage, 'utf8');
+fs.writeFileSync('packages.json', JSON.stringify(res.body, null, 4), 'utf8');
+fs.writeFileSync('packages.min.json', JSON.stringify(res.body), 'utf8');
 
-var file2 = fs.createWriteStream("atom.xml");
-var request2 = http.get("http://s3.amazonaws.com/cdnjs-artifacts//rss", function(response) {
-  response.pipe(file2);
-});
-
-
-
+var result = uglifyJs.minify(['cdnjs.handlebars.js', 'index.js']);
+fs.writeFileSync('min.js', result.code, 'utf8');
+*/

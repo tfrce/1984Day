@@ -1,59 +1,59 @@
 {
-  cities: [
+  "cities": [
   	{
-  		name: "San Francisco",
-  		time: "2pm",
-  		where:"The Embarcadero",
-  		image: ""
+  		"name": "San Francisco",
+  		"time": "2pm",
+  		"where":"The Embarcadero",
+  		"image": ""
   	}, {
-      name: "New York",
-      time: "3pm",
-      where:"Bryant Park, 42nd Street 6th Avenue",
-      image: ""
+      "name": "New York",
+      "time": "3pm",
+      "where":"Bryant Park, 42nd Street 6th Avenue",
+      "image": ""
     }, {
-      name: "Los Angeles",
-      time: "1pm",
-      where:"3rd Street Promenade",
-      image: ""
+      "name": "Los Angeles",
+      "time": "1pm",
+      "where":"3rd Street Promenade",
+      "image": ""
     }, {
-      name: "San Diego",
-      time: "11am",
-      where:"Bea Fountain, Balboa Park",
-      image: ""
+      "name": "San Diego",
+      "time": "11am",
+      "where":"Bea Fountain, Balboa Park",
+      "image": ""
     }, {
-      name: "Sacramento",
-      time: "3pm",
-      where:"Cesar Chavez Park, 910 I Street",
-      image: ""
+      "name": "Sacramento",
+      "time": "3pm",
+      "where":"Cesar Chavez Park, 910 I Street",
+      "image": ""
     }, {
-      name: "Savvanah",
-      time: "2pm",
-      where:"FBI Building, Reynolds Square",
-      image: ""
+      "name": "Savvanah",
+      "time": "2pm",
+      "where":"FBI Building, Reynolds Square",
+      "image": ""
     }, {
-      name: "Boston",
-      time: "3pm",
-      where:"Boston Regional Intelligence Centre",
-      image: ""
+      "name": "Boston",
+      "time": "3pm",
+      "where":"Boston Regional Intelligence Centre",
+      "image": ""
     }, {
-      name: "Buffalo",
-      time: "TBA",
-      where:"TBA",
-      image: ""
+      "name": "Buffalo",
+      "time": "TBA",
+      "where":"TBA",
+      "image": ""
     }, {
-      name: "Sunbury",
-      time: "12pm",
-      where:"Veterans Memorial Bridge",
-      image: ""
+      "name": "Sunbury",
+      "time": "12pm",
+      "where":"Veterans Memorial Bridge",
+      "image": ""
     }, {
-      name: "Austin",
-      time: "7:30pm",
-      where:"The Embarcadero",
-      image: ""
+      "name": "Austin",
+      "time": "7:30pm",
+      "where":"The Embarcadero",
+      "image": ""
     }, {
-      name: "Bellingham",
-      time: "6pm",
-      where:"Bellingham Public Market",
-      image: ""
+      "name": "Bellingham",
+      "time": "6pm",
+      "where":"Bellingham Public Market",
+      "image": ""
     }]
 }
