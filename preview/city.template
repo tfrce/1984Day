@@ -95,7 +95,7 @@ var speakers = _.map(city.speakers, function(speaker){return speaker.name}).join
             </div>
 
 
-            <a href="https://www.facebook.com/events/553989834652790/" target="_blank" id="revp"><img class="asset left-166 sp600 t370 z1" src="../img/1984/rsvp.jpg" /></a>
+            <a data-event-id="<%= city.event_id%>" href="https://www.facebook.com/events/<%= city.event_id%>/" target="_blank" id="revp"><img class="asset left-166 sp600 t370 z1" src="../img/1984/rsvp.jpg" /></a>
 
 
 
@@ -106,6 +106,8 @@ var speakers = _.map(city.speakers, function(speaker){return speaker.name}).join
 
     <div id="clients">
         <div class="container">
+                <p style="text-align: center;" class="attending"></p>
+
             <div class="section_header">
                 <h3 title="Sample tooltip" class="tooltipa">Share this page</h3>
             </div>
@@ -169,7 +171,7 @@ var speakers = _.map(city.speakers, function(speaker){return speaker.name}).join
 
     <!-- START GOOGLE MAP -->
     <div style="clear: both;"></div>
-    <div style="width:100%;height:600px; margin-top: 30px;"><iframe width="100%" height="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=<%= city.where%> <%=city.name%>&ie=UTF8&z=12&t=m&iwloc=near&output=embed"></iframe></div>
+    <div style="width:100%;height:600px; margin-top: 30px;"><iframe width="100%" height="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=<%= city.where !=='TBA' ? city.where : '' %> <%=city.name%>&ie=UTF8&z=12&t=m&iwloc=near&output=embed"></iframe></div>
     <div style="clear: both;"></div>
     <!-- END GOOGLE MAP -->
 

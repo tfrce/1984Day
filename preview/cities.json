@@ -5,7 +5,7 @@
   		"time": "2pm",
   		"where":"The Embarcadero",
   		"image": "",
-      "event_id": 553989834652790,
+      "event_id": 520390394700141,
       "speakers": [{
           "name": "Daniel Ellsberg",
           "img": "ellsberg.jpg",
@@ -33,60 +33,60 @@
       "time": "3pm",
       "where":"Bryant Park, 42nd Street 6th Avenue",
       "image": "",
-      "event_id": 553989834652790
+      "event_id": 1
     }, {
       "name": "Los Angeles",
       "time": "1pm",
       "where":"3rd Street Promenade",
       "image": "",
-      "event_id": 553989834652790
+      "event_id": 206984139458886
     }, {
       "name": "San Diego",
       "time": "11am",
       "where":"Bea Fountain, Balboa Park",
       "image": "",
-      "event_id": 553989834652790
+      "event_id": 1
     }, {
       "name": "Sacramento",
       "time": "3pm",
-      "where":"Cesar Chavez Park, 910 I Street",
+      "where":"Cesar Chavez Park",
       "image": "",
-      "event_id": 553989834652790
+      "event_id": 146490982217007
     }, {
       "name": "Savannah",
       "time": "2pm",
-      "where":"FBI Building, Reynolds Square",
+      "where":"Reynolds Square, Abercorn Street",
       "image": "",
-      "event_id": 553989834652790
+      "event_id": 1
     }, {
       "name": "Boston",
       "time": "3pm",
       "where":"Boston Regional Intelligence Centre",
       "image": "",
-      "event_id": 553989834652790
+      "event_id": 1
     }, {
       "name": "Buffalo",
       "time": "TBA",
       "where":"TBA",
       "image": "",
-      "event_id": 553989834652790
+      "event_id": 1
     }, {
       "name": "Sunbury",
       "time": "12pm",
       "where":"Veterans Memorial Bridge",
       "image": "",
-      "event_id": 553989834652790
+      "event_id": 1
     }, {
       "name": "Austin",
       "time": "7:30pm",
       "where":"The Embarcadero",
       "image": "",
-      "event_id": 553989834652790
+      "event_id": 1
     }, {
       "name": "Bellingham",
       "time": "6pm",
       "where":"Bellingham Public Market",
       "image": "",
-      "event_id": 553989834652790
+      "event_id": 1
     }]
 }

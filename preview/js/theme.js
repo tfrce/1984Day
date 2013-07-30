@@ -66,17 +66,22 @@ var servicesCircle = {
 
 var social = {
     initialize: function () {
-        $.getJSON('http://share.taskforce.is/?type=facebook', function(data) {
+        $.getJSON('http://share-cached.taskforce.is/?type=facebook', function(data) {
             var count = data.data[0].total_count;
             $('.facebook-button').attr('count', count);
         })
-        $.getJSON('http://share.taskforce.is/?type=twitter', function(data) {
+        $.getJSON('http://share-cached.taskforce.is/?type=twitter', function(data) {
             var count = data.count;
             $('.twitter-button').attr('count', count);
         })
-        $.getJSON('http://share.taskforce.is/?type=googleplus', function(data) {
+        $.getJSON('http://share-cached.taskforce.is/?type=googleplus', function(data) {
             var count = data.count;
             $('.google-button').attr('count', count);
+        })
+        var eventId = $('[data-event-id]').attr('data-event-id');
+        $.getJSON('http://share.taskforce.is/?type=facebook-event&url=/'+eventId+'/attending?summary=true', function(data) {
+            var count = data.summary.count;
+            $('.attending').text('Join ' + count + ' people from your city in protest!');
         })
     }
 }
