@@ -8,8 +8,8 @@
     <meta property="og:title" content="This Sunday, rally against surveillance in <%=city.where%>, <%=city.name%>." />
     <meta property="og:description" content="Thousands plan to rally across major US cities this Sunday, including in <%=city.name%>. Take part in our democracy: promote privacy and protest the NSA's unconstitutional surveillance." />
     <meta property="og:type" content="cause" />
-    <meta property="og:url" content="http://1984Day.com" />
-    <meta property="og:image" content="http://1984Day.com/img/1984/facebook.jpg" />
+    <meta property="og:url" content="http://1984day.com/<%=citySlug%>.html" />
+    <meta property="og:image" content="http://1984Day.com/img/1984/facebook.jpg" /> 
 
 
     <!-- Styles -->
@@ -45,23 +45,23 @@
             <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
                     <li><a href="/" class="">HOME</a></li>
-                    <li><a cityslug="san-francisco" href="../city/san-francisco.html">SAN FRANCISCO</a></li>
-                    <li><a cityslug="new-york" href="../city/new-york.html">NEW YORK</a></li>
-                    <li><a cityslug="los-angeles" href="../city/los-angeles.html">LOS ANGELES</a></li>
-                    <li><a cityslug="san-diego" href="../city/san-diego.html">SAN DIEGO</a></li>
+                    <li><a cityslug="san-francisco" href="../san-francisco">SAN FRANCISCO</a></li>
+                    <li><a cityslug="new-york" href="../new-york">NEW YORK</a></li>
+                    <li><a cityslug="los-angeles" href="../los-angeles">LOS ANGELES</a></li>
+                    <li><a cityslug="san-diego" href="../san-diego">SAN DIEGO</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             MORE
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a cityslug="sacramento" href="../city/sacramento.html">Sacramento, CA</a></li>
-                            <li><a cityslug="savannah" href="../city/savannah.html">Savannah, GA</a></li>
-                            <li><a cityslug="boston" href="../city/boston.html">Boston, MA</a></li>
-                            <li><a cityslug="buffalo" href="../city/buffalo.html">Buffalo, NY</a></li>
-                            <li><a cityslug="sunbury" href="../city/sunbury.html">Sunbury, PA</a></li>
-                            <li><a cityslug="austin" href="../city/austin.html">Austin, TX</a></li>
-                            <li><a cityslug="bellingham" href="../city/bellingham.html">Bellingham, WA</a></li>
+                            <li><a cityslug="sacramento" href="../sacramento">Sacramento, CA</a></li>
+                            <li><a cityslug="savannah" href="../savannah">Savannah, GA</a></li>
+                            <li><a cityslug="boston" href="../boston">Boston, MA</a></li>
+                            <li><a cityslug="buffalo" href="../buffalo">Buffalo, NY</a></li>
+                            <li><a cityslug="sunbury" href="../sunbury">Sunbury, PA</a></li>
+                            <li><a cityslug="austin" href="../austin">Austin, TX</a></li>
+                            <li><a cityslug="bellingham" href="../bellingham">Bellingham, WA</a></li>
                         </ul>
                     </li>
                     <!--<li><a href="http://restorethefourth.net/">ABOUT</a></li>-->
@@ -124,15 +124,15 @@ var speakers = _.map(city.speakers, function(speaker){return speaker.name}).join
              <div style="clear: both;"></div>
 
             <div id="socfooter" class="down" style="width: 186px; margin: auto;">
-                <a href="https://twitter.com/home?status=This Sunday, thousands around the country are rallying against surveillance. Join the event in <%=city.name%> -> http://1984day.com/city/<%=citySlug%>.html" count="0" target="_blank" class="twitter-button social-count">
+                <a href="https://twitter.com/home?status=This Sunday, thousands around the country are rallying against surveillance. Join the event in <%=city.name%> -> http://1984day.com/<%=citySlug%>" count="0" target="_blank" class="twitter-button social-count">
 
                     <div id="stwit"></div>
                 </a>
-                <a href="https://www.facebook.com/share.php?u=http://1984day.com/city/<%=citySlug%>.html&t=This Sunday, thousands around the country are rallying against surveillance. Join the event in <%=city.name%> ->" count="0" target="_blank"  class="social-count facebook-button">
+                <a href="https://www.facebook.com/share.php?u=http://1984day.com/<%=citySlug%>&t=This Sunday, thousands around the country are rallying against surveillance. Join the event in <%=city.name%> ->" count="0" target="_blank"  class="social-count facebook-button">
                     <div id="sfb"></div>
                 </a>
         
-                <a count="0" href="https://plus.google.com/share?url=http://1984day.com/city/<%=citySlug%>.html" target="_blank"  class="social-count google-button"> 
+                <a count="0" href="https://plus.google.com/share?url=http://1984day.com/<%=citySlug%>" target="_blank"  class="social-count google-button"> 
                     <div id="sgplus" ></div>
                 </a>
         
@@ -246,15 +246,15 @@ var speakers = _.map(city.speakers, function(speaker){return speaker.name}).join
 
                     <div id="socfooter" class="down">
                            
-                        <a href="https://twitter.com/home?status=This Sunday, thousands around the country are rallying against surveillance. Join the event in <%=city.name%> -> http://1984day.com/city/<%=citySlug%>.html" count="0" target="_blank" class="twitter-button social-count">
+                        <a href="https://twitter.com/home?status=This Sunday, thousands around the country are rallying against surveillance. Join the event in <%=city.name%> -> http://1984day.com/<%=citySlug%>.html" count="0" target="_blank" class="twitter-button social-count">
 
                             <div id="stwit"></div>
                         </a>
-                        <a href="https://www.facebook.com/share.php?u=http://1984day.com/city/<%=citySlug%>.html&t=This Sunday, thousands around the country are rallying against surveillance. Join the event in <%=city.name%> " count="0" target="_blank"  class="social-count facebook-button">
+                        <a href="https://www.facebook.com/share.php?u=http://1984day.com/<%=citySlug%>.html&t=This Sunday, thousands around the country are rallying against surveillance. Join the event in <%=city.name%> " count="0" target="_blank"  class="social-count facebook-button">
                             <div id="sfb"></div>
                         </a>
                 
-                        <a count="0" href="https://plus.google.com/share?url=http://1984day.com/city/<%=citySlug%>.html" target="_blank"  class="social-count google-button"> 
+                        <a count="0" href="https://plus.google.com/share?url=http://1984day.com/<%=citySlug%>.html" target="_blank"  class="social-count google-button"> 
                             <div id="sgplus" ></div>
                         </a>
                 
