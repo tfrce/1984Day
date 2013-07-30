@@ -110,3 +110,11 @@ body.event #features .option3 .feature .img {
 #footer .credits {
     border-top:0;
 }
+
+#showcase .features_op1_row .feature .img_box:hover .img-box {
+    box-shadow:none;
+}
+
+#showcase .features_op1_row .feature .img_box:hover img {
+    box-shadow:none;
+}
