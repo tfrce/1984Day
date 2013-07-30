@@ -71,8 +71,12 @@ var social = {
             $('.facebook-button').attr('count', count);
         })
         $.getJSON('http://share.taskforce.is/?type=twitter', function(data) {
-            var count = data.data[0].total_count;
+            var count = data.count;
             $('.twitter-button').attr('count', count);
+        })
+        $.getJSON('http://share.taskforce.is/?type=googleplus', function(data) {
+            var count = data.count;
+            $('.google-button').attr('count', count);
         })
     }
 }
