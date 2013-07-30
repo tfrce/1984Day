@@ -35,3 +35,39 @@ a.menu:after, .dropdown-toggle:after {
 #feature_slider {
     font-family:'Lato', sans-serif;
 }
+
+body.event div.info h2.splash {
+	font-size: 2.5em;
+}
+
+
+body.event div.info h2 {
+	font-size: 1.5em;
+}
+
+body.event .slide#ideas div.info  h2 {
+	color: #333;
+}
+
+
+.buttonhover a {
+  position:relative;
+  display: inline-block;
+}
+.buttonhover a:hover:after {
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  border-radius: 3px;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.buttonhover img {
+  display: block;
+}
