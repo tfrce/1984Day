@@ -132,7 +132,7 @@ body.event #features .option3 .feature .img {
     opacity:1;
 }
 
-article.slide#ideas {
+.home article.slide#ideas {
 	background: transparent url('../img/backgrounds/indigo_rpt.jpg') top center repeat-x; background-size:11% !important;
 }
 
