@@ -28,76 +28,65 @@
           "description": "Cullen Hoback is Director of 'Terms and Conditions May Apply', a documentary exploring the loss of online privacy."
         }
       ],
-      "bitly": "http://bit.ly/16hrMLN"
   	}, {
       "name": "New York",
       "time": "3pm",
       "where":"Bryant Park, 42nd Street 6th Avenue",
       "image": "",
       "event_id": 508963769175983,
-      "bitly": "http://bit.ly/12Cr6BB"
     }, {
       "name": "Los Angeles",
       "time": "1pm",
       "where":"3rd Street Promenade",
       "image": "",
       "event_id": 206984139458886,
-      "bitly": "http://bit.ly/11svYqc"
     }, {
       "name": "San Diego",
       "time": "11am",
       "where":"Bea Fountain, Balboa Park",
       "image": "",
       "event_id": 356709431122317,
-      "bitly": "http://bit.ly/1ckJvVj"
     }, {
       "name": "Sacramento",
       "time": "3pm",
       "where":"Cesar Chavez Park",
       "image": "",
       "event_id": 146490982217007,
-      "bitly": "http://bit.ly/14gjKVG"
     }, {
       "name": "Savannah",
       "time": "2pm",
       "where":"Reynolds Square, Abercorn Street",
       "image": "",
       "event_id": 687713187912713,
-      "bitly": "http://bit.ly/13X1Cx0"
     }, {
       "name": "Boston",
       "time": "3pm",
       "where":"Boston Regional Intelligence Centre",
       "image": "",
       "event_id": 549769355088618,
-      "bitly": "http://bit.ly/14gjPJ4"
     }, {
       "name": "Buffalo",
       "time": "TBA",
       "where":"TBA",
       "image": "",
       "event_id": 212565428900036,
-      "bitly": "http://bit.ly/157KbvV"
     }, {
       "name": "Sunbury",
       "time": "12pm",
       "where":"Veterans Memorial Bridge",
       "image": "",
       "event_id": 588749281176821,
-      "bitly": "http://bit.ly/19vhfje"
     }, {
       "name": "Austin",
       "time": "7:30pm",
       "where":"The Embarcadero",
       "image": "",
       "event_id": 501911309885912,
-      "bitly": "http://bit.ly/13szi2e"
     }, {
       "name": "Bellingham",
       "time": "6pm",
       "where":"Bellingham Public Market",
       "image": "",
-      "event_id": 1,
-      "bitly": "http://bit.ly/13kflOR"
+      "event_url": "http://www.restorethe4thbellingham.org/1984-da/",
     }]
 }

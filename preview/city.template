@@ -95,9 +95,12 @@ var speakers = _.map(city.speakers, function(speaker){return speaker.name}).join
                 <% }; %>
             </div>
 
+                <% if(city.event_id) { 
 
             <a data-event-id="<%= city.event_id%>" href="https://www.facebook.com/events/<%= city.event_id%>/" target="_blank" id="revp"><img class="asset left-166 sp600 t370 z1" src="../img/1984/rsvp.jpg" /></a>
-
+} else {
+       <a href="<%= city.event_url%>" target="_blank" id="revp"><img class="asset left-166 sp600 t370 z1" src="../img/1984/rsvp.jpg" /></a>
+}
 
 
 
