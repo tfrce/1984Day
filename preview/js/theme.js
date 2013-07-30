@@ -93,7 +93,9 @@ var social = {
         if(eventId){
             $.getJSON('http://share.taskforce.is/?type=facebook-event&url=/'+eventId+'/attending?summary=true', function(data) {
                 var count = data.summary.count;
+                if (count > 50) {
                 $('.attending').text('Join ' + count + ' people from your city in protest!');
+                }
             })
         }
     }

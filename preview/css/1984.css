@@ -201,5 +201,14 @@ body.event #features .option3 .feature .img {
 		height:420px;
 	}
 
+	#sign_up1 .container {
+		top:0;
+	}
+
+	#clients #eventdetails {
+		line-height:140%;
+	}
 }
+
+
 
