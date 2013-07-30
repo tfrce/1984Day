@@ -11,11 +11,13 @@ function convertToSlug(Text) {return Text.toLowerCase().replace(/[^\w ]+/g,'').r
 
 var cities = JSON.parse(fs.readFileSync('cities.json', 'utf8')).cities;
 
+var cityTemplate = fs.readFileSync('city.template', 'utf8');
 
 _.each(cities, function(city){
   var citySlug = convertToSlug(city.name);
+  var cityPage = _.template(cityTemplate, {city: city});
 
-  fs.writeFileSync('city/' + citySlug + '.html', 'hello', 'utf8');
+  fs.writeFileSync('city/' + citySlug + '.html', cityPage, 'utf8');
 
 });
 /*
