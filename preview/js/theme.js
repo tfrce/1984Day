@@ -67,7 +67,11 @@ var servicesCircle = {
 var social = {
     initialize: function () {
         $.getJSON('http://sharec.taskforce.is/?type=facebook', function(data) {
-            var count = data.data[0].total_count;
+            if(data.data.length > 0) {
+                var count = data.data[0].total_count;
+            } else {
+                var count = 0;
+            }
             $('.facebook-button').attr('count', count);
         })
         $.getJSON('http://sharec.taskforce.is/?type=twitter', function(data) {
