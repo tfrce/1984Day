@@ -102,3 +102,11 @@ body.event #features .option3 .feature .img {
 		margin-left: 180px;		
 	}
 }
+
+#footer {
+    padding-top:1em;
+}
+
+#footer .credits {
+    border-top:0;
+}
