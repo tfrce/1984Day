@@ -1,0 +1,14 @@
+{
+  "name": "1984day",
+  "description": "Misc build tools ",
+  "version": "0.0.0",
+  "engines": {
+    "node": "~0.6.11"
+  },
+  "dependencies": {
+    "underscore": "1.4.4",
+    "superagent": "~0.13.0",
+    "html-minifier": "~0.5.2",
+	 "uglify-js": "~2.3.6"
+  }
+}

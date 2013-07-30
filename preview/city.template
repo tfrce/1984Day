@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1984Day.com - Rally for Privacy on Sunday, 8/4</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/bootstrap-overrides.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/1984.css" type="text/css" media="screen" />
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/lib/animate.css" media="screen, projection">    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="pull_top">
+    <div class="navbar transparent navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="index.html">
+                <strong>1984 DAY</strong>
+            </a>
+            <div class="nav-collapse collapse">
+                <ul class="nav pull-right">
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="San-Francisco/">SAN FRANCISCO</a></li>
+                    <li><a href="New-York/">NEW YORK</a></li>
+                    <li><a href="Los-Angeles/">LOS ANGELES</a></li>
+                    <li><a href="San-Diego/">SAN DIEGO</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            MORE
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Sacramento/">Sacramento, CA</a></li>
+                            <li><a href="https://www.facebook.com/events/687713187912713/">Savannah, GA</a></li>
+                            <li><a href="https://www.facebook.com/events/549769355088618/">Boston, MA</a></li>
+                            <li><a href="https://www.facebook.com/events/687713187912713/">Buffalo, NY</a></li>
+                            <li><a href="https://www.facebook.com/events/588749281176821/">Sunbury, PA</a></li>
+                            <li><a href="https://www.facebook.com/events/501911309885912/">Austin, TX</a></li>
+                            <li><a href="http://www.restorethe4thbellingham.org/1984-da/">Bellingham, WA</a></li>
+                        </ul>
+                    </li>
+                    <!--<li><a href="http://restorethefourth.net/">ABOUT</a></li>-->
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="feature_slider" class="">
+        <!-- 
+            Each slide is composed by <img> and .info
+            - .info's position is customized with css in index.css
+            - each <img> parallax effect is declared by the following params inside its class:
+            
+            example: class="asset left-472 sp600 t120 z3"
+            left-472 means left: -472px from the center
+            sp600 is speed transition
+            t120 is top to 120px
+            z3 is z-index to 3
+            Note: Maintain this order of params
+
+            For the backgrounds, you can combine from the bgs folder :D
+        -->
+        <!--
+        <article class="slide" id="showcasing" style="background: url('img/backgrounds/landscape.png') repeat-x top center;">
+            <img class="asset left-30 sp600 t120 z1" src="img/slides/scene1/macbook.png" />
+            <div class="info">
+                <h2>Beautiful theme for showcasing your works.</h2>
+            </div>
+        </article>-->
+        <article class="slide" id="ideas" style="background: transparent url('img/backgrounds/indigo_rpt.jpg') top center repeat-x; background-size:7% !important;">
+            <div class="info">
+                <h2 class="splash">This Sunday, 8/4, We Celebrate Privacy</h2>
+                <h2>Join thousands of participants in 1984 Day rallies around the country</h2>
+            </div>
+            <img class="asset left-380 sp600 t270 z2" src="img/1984/camera.png" />
+            <img class="asset left-32 sp600 t317 z1" src="img/1984/shone-light.png" />
+            <!-- <img class="asset left-210 sp600 t213 z2" src="img/slides/scene2/middle.png" />
+            <img class="asset left60 sp600 t260 z1" src="img/slides/scene2/right.png" /> -->
+        </article>
+        <!--<article class="slide" id="tour" style="background: url('img/backgrounds/color-splash.jpg') repeat-x top center;">
+            <img class="asset left-472 sp650 t210 z3" src="img/slides/scene3/ipad.png" />
+            <img class="asset left-365 sp600 t270 z4" src="img/slides/scene3/iphone.png" />
+            <img class="asset left-350 sp450 t135 z2" src="img/slides/scene3/desktop.png" />
+            <img class="asset left-185 sp550 t220 z1" src="img/slides/scene3/macbook.png" />
+            <div class="info">
+                <h2>Fully Responsive theme</h2>
+                <a href="features.html">TOUR THE PRODUCT</a>
+            </div>
+        </article>
+        <article class="slide" id="responsive" style="background: url('img/backgrounds/indigo.jpg') repeat-x top center;">
+            <img class="asset left-472 sp600 t120 z3" src="img/slides/scene4/html5.png" />
+            <img class="asset left-190 sp500 t120 z2" src="img/slides/scene4/css3.png" />
+            <div class="info">
+                <h2>
+                    Responsive <strong>HTML5 & CSS3</strong>
+                    Theme
+                </h2>                
+            </div>
+        </article>-->        
+    </section>
+
+    <div id="showcase">
+        <div class="container">
+            <!-- <div class="section_header">
+                <h3>Events:</h3>
+            </div>  -->           
+            <div class="row feature_wrapper">
+                <!-- Features Row -->
+                <div class="features_op1_row" style="border-bottom: 1px #ddd solid; padding-bottom:20px;">
+                    <!-- Feature -->
+                    <div class="span4 feature first" >
+                        <div class="text" style="margin-top:0; margin-bottom:15px;">
+                            <a href="San-Francisco"><h6>San Francisco</h6></a>
+                            <span class="event-datetime">2pm</span>
+                            <p>
+                            <strong>The Embarcadero</strong>
+                            </p>
+                        </div>
+                        <div class="img_box">
+                            <a href="San-Francisco">
+                                <img src="img/event/sfo.png">
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Feature -->
+                    <div class="span4 feature">
+                        <div class="text" style="margin-top:0; margin-bottom:15px;">
+                            <a href="New-York"><h6>New York</h6></a>
+                            <span class="event-datetime">3pm</span>
+                            <p>
+                            <strong>Bryant Park, 42nd Street 6th Avenue</strong>
+                            </p>
+                        </div>
+                        <div class="img_box">
+                            <a href="New-York">
+                                <img src="img/event/ny.png">
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Feature -->
+                    <div class="span4 feature last">
+                        <div class="text" style="margin-top:0; margin-bottom:15px;"> 
+                            <a href="Los-Angeles"><h6>Los Angeles</h6></a>
+                            <span class="event-datetime">1pm</span>
+                            <p>
+                            <strong>3rd Street Promenade</strong>
+                            </p>
+                        </div>
+                        <div class="img_box">
+                            <a href="Los-Angeles">
+                                <img src="img/event/la.png">
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="features_op1_row" style="border-bottom: 1px #ddd solid; padding-bottom:30px;">
+                    <div class="span4 feature first">
+                        <div class="text">
+                            <a href="San-Diego"><h6>San Diego</h6></a>
+                            <span class="event-datetime">11am</span>
+                            <p>
+                            <strong>Bea Fountain, Balboa Park</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="span4 feature">
+                        <div class="text">
+                            <a href="Sacramento"><h6>Sacramento</h6></a>
+                            <span class="event-datetime">3pm</span>
+                            <p>
+                            <strong>Cesar Chavez Park, 910 I Street</strong>
+                            </p>
+                        </div>
+                    </div>   
+                    <div class="span4 feature last">
+                        <div class="text">
+                            <a href="Savannah"><h6>Savannah</h6></a>
+                            <span class="event-datetime">2pm</span>
+                            <p>
+                            <strong>FBI Building, Reynolds Square</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="features_op1_row" style="border-bottom: 1px #ddd solid; padding-bottom:30px;">
+                    <div class="span4 feature first">
+                        <div class="text">
+                            <a href="Boston"><h6>Boston</h6></a>
+                            <span class="event-datetime">3pm</span>
+                            <p>
+                            <strong>Boston Regional Intelligence Centre</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="span4 feature">
+                        <div class="text">
+                            <a href="Buffalo"><h6>Buffalo</h6></a>
+                            <span class="event-datetime">TBA</span>
+                            <p>
+                            <strong>TBA</strong>
+                            </p>
+                        </div>
+                    </div>   
+                    <div class="span4 feature last">
+                        <div class="text">
+                            <a href="Sunbury"><h6>Sunbury</h6></a>
+                            <span class="event-datetime">12pm</span>
+                            <p>
+                            <strong>Veterans Memorial Bridge</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>   
+                </div>
+                <div class="features_op1_row" style="border-bottom: 1px #ddd solid; padding-bottom:20px;">
+                    <div class="span4 feature first">
+                        <div class="text">
+                            <a href="Austin"><h6>Austin</h6></a>
+                            <span class="event-datetime">7:30pm</span>
+                            <p>
+                            <strong>TBA</strong><br />'We Are Legion: The Story of the Hacktivists'
+                            </p>
+                        </div>
+                    </div>
+                    <div class="span4 feature">
+                        <div class="text">
+                            <a href="Bellingham"><h6>Bellingham</h6></a>
+                            <span class="event-datetime">6pm</span>
+                            <p>
+                            <strong>Bellingham Public Market</strong><br />Encryption and Privacy Workshop
+                            </p>
+                        </div>
+                    </div>   
+                    <div class="clearfix"></div>  
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="features">
+        <div class="container">
+            <div class="section_header">
+                <h3>Why we must rally</h3>
+                <p>
+                	Participatory democracy is a two way street. We must all take responsibility to demonstrate our commitment to the principles of our nation. By rallying this Sunday, we are sending a very loud message to our Representatives that they can earn our trust and support by ensuring the passage of legislation to protect privacy and providing checks and balances against the overreach of the executive branch into our lives.
+                </p>
+            </div> 
+            <div class="row feature">
+                <div class="span6">
+                    <img src="img/1984/nsa-hawk.png"/>
+                </div>
+                <div class="span6 info">
+                    <h3 style="margin-top:20px">
+                        The NSA is violating the constitution
+                    </h3>
+                    <p>
+                        Recent revelations about the NSA's surveillance infrastructure provide concrete evidence that phone and email records of US and foreign nationals are being collected and stored by the government.
+                    </p>
+                    <p>
+                    	We demand that our government protect our right to privacy with respect to data from our digital communications devices. This includes metadata, as well as our communications.
+                    </p>
+                </div>
+            </div>
+            <div class="row feature ss">
+                <div class="span6 info">
+                    <h3 style="margin-top:20px">
+                        Democracy will die without Privacy
+                    </h3>
+                    <p>
+                        We will rally to send a message to our representatives in Congress, to restore the privacy we are guaranteed by the Fourth Amendment, and to support the passage of legislation to revoke the NSA's authorization to conduct mass surveillance of US and foreign citizens that contravenes the 4th Amendment.
+                    </p>
+                </div>
+                <div class="span6">
+                    <img src="img/1984/privacy-lock.png" class="pull-right" />
+                </div>
+            </div>
+            <div class="row feature ss">
+                <div class="span6">
+                    <img src="img/1984/fourth-amendment.jpg" />
+                </div>
+                <div class="span6 info">
+                    <h3>
+                        Restoring the Fourth Amendment
+                    </h3>
+                    <p>
+                        We will rally to send a message to our representatives in Congress, to restore the privacy we are guaranteed by the Fourth Amendment, and to support the passage of legislation to revoke the NSA's authorization to conduct mass surveillance of US and foreign citizens that contravenes the 4th Amendment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div id="share">
+        <div class="container">
+            <div class="section_header">
+                <h3>Help spread the word</h3>
+            </div> 
+            <p>
+            	Tell your friends to rally for Privacy. We need as many people to come out and rally with you.
+            </p>
+            <div class="row">
+                <div class="span6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- starts footer -->
+    <footer id="footer">
+        <div class="container">            
+            <div class="row credits">
+                <div class="span12">
+                    <div class="row social">
+                        <div class="span12">
+                            <a href="#" class="facebook">
+                                <span class="socialicons ico1"></span>
+                                <span class="socialicons_h ico1h"></span>
+                            </a>
+                            <a href="#" class="twitter">
+                                <span class="socialicons ico2"></span>
+                                <span class="socialicons_h ico2h"></span>
+                            </a>
+                            <a href="#" class="gplus">
+                                <span class="socialicons ico3"></span>
+                                <span class="socialicons_h ico3h"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row copyright">
+                        <div class="span12">
+                            © 2013 Restore the Fourth. Licensed under a <a href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.
+                        </div>
+                        <div class="span12">
+                            Photo Credits: San Francisco, <a href="http://www.flickr.com/photos/47125846@N08/8476743612/">SpreadTheMagic</a> <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/">(cc-by-nc-nd)</a>;
+                            New York, <a href="http://www.flickr.com/photos/34246041@N08/6967173295/">dkshots</a> <a href="http://creativecommons.org/licenses/by-nc/2.0/">(cc-by-nc)</a>;
+                            Los Angeles, <a href="http://www.flickr.com/photos/95282411@N00/4249483340/">Slices of Light</a> <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/">(cc-by-nc-nd)</a>;
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/theme.js"></script>
+
+    <script type="text/javascript" src="js/index-slider.js"></script>	
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.taskforce.is/piwik/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "1"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
+</body>
+</html>
