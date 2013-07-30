@@ -18,6 +18,8 @@ $(function () {
     staticHeader.initialize();
 
     portfolioItem.initialize();
+    social.initialize();
+
 });
 
 var portfolioItem = {
@@ -61,3 +63,12 @@ var servicesCircle = {
     }
 }
 
+
+var social = {
+    initialize: function () {
+        $.getJSON('http://share.taskforce.is/?type=facebook', function(data) {
+            var count = data.data[0].total_count;
+            $('.facebook-button').attr('count', count);
+        })
+    }
+}
