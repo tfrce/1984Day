@@ -94,6 +94,20 @@
       "event_id": 501911309885912,
       "twitter": "RestoreThe4thATX"
     }, {
+      "name": "Raleigh",
+      "time": "10:00am",
+      "where":"North Carolina State Capitol, 1 E. Edenton Street",
+      "image": "",
+      "event_id": 476528695773018,
+      "twitter": ""
+    }, {
+      "name": "Carson City",
+      "time": "10:00am",
+      "where":"Nevada Legislature, 401 S. Carson St.",
+      "image": "",
+      "event_id": 475479909213133,
+      "twitter": ""
+    },{
       "name": "Bellingham",
       "time": "6pm",
       "where":"Bellingham Public Market",
