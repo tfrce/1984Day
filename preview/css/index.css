@@ -198,6 +198,11 @@
     opacity: 1;
 }
 
+/* Nudge
+-------------------------------------------------- */
+        
+.tcenter { text-align: center;}
+.sharecenter {margin: auto; width: 186px;}
 
 /* Showcase services
 -------------------------------------------------- */
