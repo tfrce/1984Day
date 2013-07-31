@@ -84,6 +84,7 @@
                     
                 <div class="span3 division" style="border-top: 1px solid rgb(104, 167, 196); margin: 30px auto 30px"></div>
 
+
                 <% if(city.event_id) { %>
                     <a data-event-id="<%= city.event_id%>"  href="https://www.facebook.com/events/<%= city.event_id%>/" target="_blank" id="revp">
                         <img onmouseover="this.src='../img/1984/rsvp-hover.png'" onmouseout="this.src='../img/1984/rsvp.png'" src="../img/1984/rsvp.png" />
