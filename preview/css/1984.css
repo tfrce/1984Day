@@ -169,6 +169,14 @@ body.event #features .option3 .feature .img {
 	.homepage article.slide#ideas {
 		background-size:14% !important;
 	}
+
+	#sign_up1 .header h4 {
+		font-size: 30px;
+		line-height: 45px
+	}
+	#sign_up1 .container {
+		top: 30px;
+	}
 }
 
 @media (max-width: 767px) {
