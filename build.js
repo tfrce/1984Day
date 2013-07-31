@@ -1,5 +1,5 @@
 var superagent = require('superagent');
-var _ = require('underscore');
+var _ = require('lodash');
 var fs = require('fs');
 var http = require('http');
 var htmlMinifier = require('html-minifier');
