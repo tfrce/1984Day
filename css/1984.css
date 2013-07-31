@@ -24,6 +24,9 @@ a.menu:after, .dropdown-toggle:after {
     opacity:0.9;
     margin-bottom:0.8em;
 }
+#showcase {
+	margin-top: 30px;
+}
 
 .splash {
     position:relative;
@@ -156,6 +159,11 @@ body.event #features .option3 .feature .img {
 #clients #eventdetails {
 	text-align: center;
     font-size: 20px
+}
+
+#showcase .section_header {
+	text-align: center;
+	margin-bottom:30px;
 }
 
 @media (max-width: 979px) and (min-width: 768px) {
