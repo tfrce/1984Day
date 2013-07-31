@@ -3,6 +3,9 @@
 @import url("bootstrap-overrides.min.css");
 @import url("theme.css");
 @import url("index.css");
+@import url("features.css");
+@import url("contact.css");
+@import url("sign-up.css");
 @import url("1984.css");
 @import url("lib/animate.css");
 
