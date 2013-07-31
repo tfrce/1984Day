@@ -2,7 +2,7 @@
   "cities": [
   	{
   		"name": "San Francisco",
-  		"time": "2pm",
+  		"time": "12pm",
   		"where":"Vaillancourt Fountain, The Embarcadero",
       "latlong": "37.794906,-122.394691",
   		"image": "",
@@ -118,5 +118,12 @@
       "image": "",
       "event_url": "http://www.restorethe4thbellingham.org/1984-da/",
       "twitter": "RestoreThe4thMA"
+    },{
+      "name": "Washington, DC",
+      "time": "12pm",
+      "where":"Rock Bottom, 4238 Wilson Boulevard",
+      "image": "",
+      "event_url": "http://www.meetup.com/Prince-William-Libertarians/events/132071442/",
+      "twitter": "RestoreThe4thDC"
     }]
 }

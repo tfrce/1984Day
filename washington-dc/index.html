@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>1984Day.com - Rally for Privacy in <%=city.name%> on Sunday, 8/4</title>
+    <title>1984Day.com - Rally for Privacy in Washington, DC on Sunday, 8/4</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="This Sunday, rally against surveillance in <%=city.name%>." />
-    <meta property="og:description" content="Thousands plan to rally across major US cities this Sunday, including in <%=city.name%>. Take part in our democracy: promote privacy and protest the NSA's unconstitutional surveillance." />
+    <meta property="og:title" content="This Sunday, rally against surveillance in Washington, DC." />
+    <meta property="og:description" content="Thousands plan to rally across major US cities this Sunday, including in Washington, DC. Take part in our democracy: promote privacy and protest the NSA's unconstitutional surveillance." />
     <meta property="og:type" content="cause" />
-    <meta property="og:url" content="http://1984day.com/<%=citySlug%>/" />
+    <meta property="og:url" content="http://1984day.com/washington-dc/" />
     <meta property="og:image" content="http://1984Day.com/img/1984/facebook.jpg" /> 
 
 
@@ -25,7 +25,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../css/lib/animate.css" media="screen, projection">    
-    <meta name="city" content="<%=citySlug%>" />
+    <meta name="city" content="washington-dc" />
 
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -80,24 +80,19 @@
         <div class="container">
             <div class="row">
                 <div class="span12 header">
-                    <h4>Rally Against Surveillance this Sunday in <%= city.name %></h4>
+                    <h4>Rally Against Surveillance this Sunday in Washington, DC</h4>
                     <div class="span3 division" style="border-top: 1px solid rgb(104, 167, 196); margin: 30px auto 30px"></div>
                     <p><strong>This Sunday is 8/4. We're declaring it "1984 Day" and rallying for privacy.</strong></p>
-                    <p>Join thousands of US citizens across the country and protest surveillance<%= city.customtext%>.</p>
+                    <p>Join thousands of US citizens across the country and protest surveillance.</p>
                     
                 <div class="span3 division" style="border-top: 1px solid rgb(104, 167, 196); margin: 30px auto 30px"></div>
 
 
-                <% if(city.event_id) { %>
-                    <a data-event-id="<%= city.event_id%>"  href="https://www.facebook.com/events/<%= city.event_id%>/" target="_blank" id="revp">
-                        <img onmouseover="this.src='../img/1984/rsvp-hover.png'" onmouseout="this.src='../img/1984/rsvp.png'" src="../img/1984/rsvp.png" />
-                    </a>
-                <% }
-                else { %>
-                    <a href="<%= city.event_url%>/" target="_blank" id="revp">
+                
+                    <a href="http://www.meetup.com/Prince-William-Libertarians/events/132071442//" target="_blank" id="revp">
                         <img src="../img/1984/eventpage.png" />
                     </a>
-                <% }; %>
+                
 
                 </div>
             </div>
@@ -116,25 +111,21 @@
              <div style="clear: both;"></div>
 
              <div class="row" id="eventdetails">
-                <p><strong>Time and location:</strong>  <%=city.time%> at <%=city.where%>, <%=city.name%></p>
-                <% if(city.speakers) { 
-                    var speakers = _.map(city.speakers, function(speaker){return speaker.name}).join(', ');
-                    %>
-                <p><strong>Speakers:</strong> <%=speakers%></p>
-                <% }; %>
+                <p><strong>Time and location:</strong>  12pm at Rock Bottom, 4238 Wilson Boulevard, Washington, DC</p>
+                
                 <p style="padding-top:30px; font-size:25px"><strong>Share this event with your friends:</strong></p>
             </div>
 
             <div id="socfooter" class="down" style="width: 186px; margin: auto; padding-top:50px">
-                <a href="https://twitter.com/home?status=This Sunday, thousands around the country are rallying against surveillance. Join the event in <%=city.name%> -> http://1984day.com/<%=citySlug%>" count="0" target="_blank" id="tweet-box" class="twitter-button social-count">
+                <a href="https://twitter.com/home?status=This Sunday, thousands around the country are rallying against surveillance. Join the event in Washington, DC -> http://1984day.com/washington-dc" count="0" target="_blank" id="tweet-box" class="twitter-button social-count">
 
                     <div id="stwit"></div>
                 </a>
-                <a href="https://www.facebook.com/share.php?u=http://1984day.com/<%=citySlug%>&t=This Sunday, thousands around the country are rallying against surveillance. Join the event in <%=city.name%> ->" count="0" target="_blank" id="facebook" class="social-count facebook-button">
+                <a href="https://www.facebook.com/share.php?u=http://1984day.com/washington-dc&t=This Sunday, thousands around the country are rallying against surveillance. Join the event in Washington, DC ->" count="0" target="_blank" id="facebook" class="social-count facebook-button">
                     <div id="sfb"></div>
                 </a>
         
-                <a count="0" href="https://plus.google.com/share?url=http://1984day.com/<%=citySlug%>" id="gplus" target="_blank"  class="social-count google-button"> 
+                <a count="0" href="https://plus.google.com/share?url=http://1984day.com/washington-dc" id="gplus" target="_blank"  class="social-count google-button"> 
                     <div id="sgplus" ></div>
                 </a>
         
@@ -142,46 +133,11 @@
             <div style="clear: both;"></div>
     </div>
 </div>
-<% if(city.speakers) { %>
 
-<div id="features" class="features_page">
-        <div class="container">
-        <div class="feature_wrapper option3">
-            <div class="section_header">
-                <h3>Speakers</h3>
-            </div>
-
-            <!-- Features Row -->
-            <div class="row">
-                <!-- Feature -->
-                <% 
-                var i = 1;
-                _.each(city.speakers,function(speaker){ %>
-
-                    <div class="span4 feature <%= i % 3 === 0 ? 'last' : '' %>">
-                        <div class="img">
-                            <img src="../img/1984/<%= speaker.img %>">
-                        </div>
-                        <div class="text">
-                            <h6><%= speaker.name %></h6>
-                            <p>
-                                <%= speaker.description %>
-                            </p>
-                        </div>
-                    </div>
-                <% i++; }); %>
-            </div>
-        </div>
-    </div>
-    </div>
-
-</div>
-
-<% }; %>
 
     <!-- START GOOGLE MAP -->
     <div style="clear: both;"></div>
-    <div style="width:100%;height:600px; margin-top: 30px;"><iframe width="100%" height="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=<%= city.where !=='TBA' ? (city.exactwhere ? city.exactwhere : city.where) + ' ' + city.name + '&z=16' : city.name + '&z=16' %> &ie=UTF8&t=m&iwloc=near&output=embed"></iframe></div>
+    <div style="width:100%;height:600px; margin-top: 30px;"><iframe width="100%" height="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Rock Bottom, 4238 Wilson Boulevard Washington, DC&z=16 &ie=UTF8&t=m&iwloc=near&output=embed"></iframe></div>
     <div style="clear: both;"></div>
     <!-- END GOOGLE MAP -->
 
@@ -251,15 +207,15 @@
 
                     <div id="socfooter" class="down">
                            
-                        <a href="https://twitter.com/home?status=This Sunday, thousands around the country are rallying against surveillance. Join the event in <%=city.name%> -> http://1984day.com/<%=citySlug%>" id="tweet-box" count="0" target="_blank" class="twitter-button social-count">
+                        <a href="https://twitter.com/home?status=This Sunday, thousands around the country are rallying against surveillance. Join the event in Washington, DC -> http://1984day.com/washington-dc" id="tweet-box" count="0" target="_blank" class="twitter-button social-count">
 
                             <div id="stwit"></div>
                         </a>
-                        <a href="https://www.facebook.com/share.php?u=http://1984day.com/<%=citySlug%>&t=This Sunday, thousands around the country are rallying against surveillance. Join the event in <%=city.name%> " id="facebook" count="0" target="_blank"  class="social-count facebook-button">
+                        <a href="https://www.facebook.com/share.php?u=http://1984day.com/washington-dc&t=This Sunday, thousands around the country are rallying against surveillance. Join the event in Washington, DC " id="facebook" count="0" target="_blank"  class="social-count facebook-button">
                             <div id="sfb"></div>
                         </a>
                 
-                        <a count="0" href="https://plus.google.com/share?url=http://1984day.com/<%=citySlug%>" target="_blank"  class="social-count google-button"> 
+                        <a count="0" href="https://plus.google.com/share?url=http://1984day.com/washington-dc" target="_blank"  class="social-count google-button"> 
                             <div id="sgplus" ></div>
                         </a>
 
@@ -301,9 +257,9 @@
     <script type="text/javascript">
       $(document).ready(function(){$("#facebook").attr("onclick","openFacebook(); return false;");$("#gplus").attr("onclick","openGplus(); return false;");$("#tweet-box").attr("onclick","openTwitter(); return false;")})
       function randomize(e){var t=e.length,n,r;if(t===0)return false;while(--t){n=Math.floor(Math.random()*(t+1));r=e[t];e[t]=e[n];e[n]=r}}
-      function openFacebook(){var e="https://www.facebook.com/sharer/sharer.php?u=http://1984day.com/<%=citySlug%>";window.open(e,"Share on Facebook","width=500,height=500");return false}
-      function openGplus(){var e="https://plus.google.com/share?url=http://1984day.com/<%=citySlug%>";window.open(e,"Share on Google Plus","width=500,height=436");return false}
-      function openTwitter(){var e=["sinak","neutralthoughts","tforce"];randomize(e);var t="https://twitter.com/home?status=This Sunday, thousands around the country are rallying against surveillance. Join the event in <%=city.name%> -> http://1984day.com/<%=citySlug%>&related=Restore_the4th%2C<%=city.twitter%>%2C"+e[0]+"%2C"+e[1]+"%2C";window.open(t,"Twitter","width=550,height=420");return false}
+      function openFacebook(){var e="https://www.facebook.com/sharer/sharer.php?u=http://1984day.com/washington-dc";window.open(e,"Share on Facebook","width=500,height=500");return false}
+      function openGplus(){var e="https://plus.google.com/share?url=http://1984day.com/washington-dc";window.open(e,"Share on Google Plus","width=500,height=436");return false}
+      function openTwitter(){var e=["sinak","neutralthoughts","tforce"];randomize(e);var t="https://twitter.com/home?status=This Sunday, thousands around the country are rallying against surveillance. Join the event in Washington, DC -> http://1984day.com/washington-dc&related=Restore_the4th%2CRestoreThe4thDC%2C"+e[0]+"%2C"+e[1]+"%2C";window.open(t,"Twitter","width=550,height=420");return false}
     </script>  
 
     <!-- Piwik -->
