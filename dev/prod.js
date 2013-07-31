@@ -1,4 +1,4 @@
-
+var path = require('path');
 var fs = require('fs-extra');
 var cleanCSS = require('clean-css');
 var _ = require('lodash');
@@ -19,7 +19,7 @@ function cssIncImages(cssFile) {
     try {
       var img = fs.readFileSync(imgPath, 'base64');
       var ext = imgPath.substr(imgPath.lastIndexOf('.') + 1);
-      css = css.replace(match[1] + '?embed', 'data:image/' + ext + ';base64,' + img);
+      css = css.replace(match[1]+'?embed', 'data:image/' + ext + ';base64,' + img);
     } catch (err) {
       console.log('Image not found (%s).', imgPath);
     }
@@ -35,7 +35,7 @@ fs.copy('.', '..', function(err){
     var styles = fs.readFileSync('../css/styles.css', 'utf8');
     var minimized = cleanCSS.process(styles, {relativeTo: '../css'});
     fs.writeFileSync('../css/styles.css', minimized, 'utf8');
-    cssIncImages('../css/styles.css');
+    //cssIncImages('../css/styles.css');
     var indexPage = fs.readFileSync('../index.html', 'utf8');
     indexPage = indexPage.replace('css/styles.css',cdn+'/css/styles.css?'+cdnversion);
     indexPage = htmlMinifier.minify(indexPage, htmlCompressionOptions);
