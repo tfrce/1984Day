@@ -125,5 +125,19 @@
       "image": "",
       "event_id": "290601617747326",
       "twitter": "RestoreThe4thDC"
+    },{
+      "name": "Iowa City",
+      "time": "12pm",
+      "where":"Downtown Iowa City Ped Mall",
+      "image": "",
+      "event_id": "359634850806912",
+      "twitter": "RestoreThe4thIC"
+    },{
+      "name": "St Louis",
+      "time": "5:40pm",
+      "where":"St. Louis County Library",
+      "image": "",
+      "event_id": "616159668424089",
+      "twitter": "RT4STL"
     }]
 }
