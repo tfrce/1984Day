@@ -8,7 +8,7 @@ fs.copy('.', '..', function(err){
   }
   else {
     var styles = fs.readFileSync('../css/styles.css', 'utf8');
-    var minimized = cleanCSS.process(styles);
+    var minimized = cleanCSS.process(styles, {relativeTo: '../css'});
     fs.writeFileSync('../css/styles.css', minimized, 'utf8');
     console.log("success!")
   }
