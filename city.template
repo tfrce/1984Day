@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="This Sunday, rally against surveillance in <%=city.where%>, <%=city.name%>." />
+    <meta property="og:title" content="This Sunday, rally against surveillance in <%=city.name%>." />
     <meta property="og:description" content="Thousands plan to rally across major US cities this Sunday, including in <%=city.name%>. Take part in our democracy: promote privacy and protest the NSA's unconstitutional surveillance." />
     <meta property="og:type" content="cause" />
     <meta property="og:url" content="http://1984day.com/<%=citySlug%>/" />
