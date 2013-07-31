@@ -11,6 +11,8 @@
     "html-minifier": "~0.5.2",
     "bitly": "~1.2.4",
     "wrench": "~1.5.1",
-    "fs-extra": "~0.6.3"
+    "fs-extra": "~0.6.3",
+    "requirejs": "~2.1.8",
+    "clean-css": "~1.0.12"
   }
 }
