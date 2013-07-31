@@ -195,9 +195,10 @@ body.event #features .option3 .feature .img {
 
 	.slide#ideas .info h2 {
 		font-size: 20px		!important;
+		line-height:32px;
 	}
 	.slide#ideas .info h2.splash {
-		font-size: 30px 	!important;
+		font-size: 24px 	!important;
 		font-weight: bold;
 	}
 	.slide#ideas .info {
