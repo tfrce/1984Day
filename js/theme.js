@@ -73,7 +73,7 @@ var servicesCircle = {
 
 var social = {
     initialize: function () {
-        $.getJSON('http://sharec.taskforce.is/?type=facebook&url='+window.location.href, function(data) {
+        $.getJSON('http://share.taskforce.is/?type=facebook&url='+window.location.href, function(data) {
             if(data.data.length > 0) {
                 var count = data.data[0].total_count;
             } else {
@@ -81,11 +81,11 @@ var social = {
             }
             $('.facebook-button').attr('count', count);
         })
-        $.getJSON('http://sharec.taskforce.is/?type=twitter&url='+window.location.href, function(data) {
+        $.getJSON('http://share.taskforce.is/?type=twitter&url='+window.location.href, function(data) {
             var count = data.count;
             $('.twitter-button').attr('count', count);
         })
-        $.getJSON('http://sharec.taskforce.is/?type=googleplus&url='+window.location.href, function(data) {
+        $.getJSON('http://share.taskforce.is/?type=googleplus&url='+window.location.href, function(data) {
             var count = data.count;
             $('.google-button').attr('count', count);
         })
