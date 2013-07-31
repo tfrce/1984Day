@@ -80,7 +80,7 @@
                     <h4>Rally for Privacy this Sunday in <%= city.name %></h4>
                     <div class="span3 division" style="border-top: 1px solid rgb(104, 167, 196); margin: 30px auto 30px"></div>
                     <p><strong>This Sunday is 8/4. We're declaring it "1984 Day" and rallying for privacy.</strong></p>
-                    <p>Join thousands of US citizens across the country and protest surveillance.</p>
+                    <p>Join thousands of US citizens across the country and protest surveillance<%= city.customtext%>.</p>
                     
                 <div class="span3 division" style="border-top: 1px solid rgb(104, 167, 196); margin: 30px auto 30px"></div>
 
