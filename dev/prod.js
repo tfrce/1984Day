@@ -11,7 +11,22 @@ var htmlCompressionOptions = {
   	collapseBooleanAttributes: true,
   	collapseWhitespace: true,
   };
-
+function cssIncImages(cssFile) {
+  var imgRegex = /url\s?\(['"]?(\.\.\/img.*?)\?embed(?=['"]?\))/gi;
+  var css = fs.readFileSync(cssFile, 'utf-8');
+  while (match = imgRegex.exec(css)) {
+    var imgPath = path.join(path.dirname(cssFile), match[1]);
+    try {
+      var img = fs.readFileSync(imgPath, 'base64');
+      var ext = imgPath.substr(imgPath.lastIndexOf('.') + 1);
+      css = css.replace(match[1] + '?embed', 'data:image/' + ext + ';base64,' + img);
+    } catch (err) {
+      console.log('Image not found (%s).', imgPath);
+    }
+  }
+   fs.writeFileSync(cssFile, css, 'utf-8'); // you can overwrite the original file with this line
+  return css;
+}
 fs.copy('.', '..', function(err){
   if (err) {
     console.error(err);
@@ -20,7 +35,7 @@ fs.copy('.', '..', function(err){
     var styles = fs.readFileSync('../css/styles.css', 'utf8');
     var minimized = cleanCSS.process(styles, {relativeTo: '../css'});
     fs.writeFileSync('../css/styles.css', minimized, 'utf8');
-
+    cssIncImages('../css/styles.css');
     var indexPage = fs.readFileSync('../index.html', 'utf8');
     indexPage = indexPage.replace('css/styles.css',cdn+'/css/styles.css?'+cdnversion);
     indexPage = htmlMinifier.minify(indexPage, htmlCompressionOptions);
