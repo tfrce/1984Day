@@ -8,7 +8,7 @@
     <meta property="og:title" content="This Sunday, rally against surveillance in <%=city.where%>, <%=city.name%>." />
     <meta property="og:description" content="Thousands plan to rally across major US cities this Sunday, including in <%=city.name%>. Take part in our democracy: promote privacy and protest the NSA's unconstitutional surveillance." />
     <meta property="og:type" content="cause" />
-    <meta property="og:url" content="http://1984day.com/<%=citySlug%>" />
+    <meta property="og:url" content="http://1984day.com/<%=citySlug%>/" />
     <meta property="og:image" content="http://1984Day.com/img/1984/facebook.jpg" /> 
 
 
@@ -304,7 +304,7 @@
       function openGplus(){var e="https://plus.google.com/share?url=http://1984day.com/<%=citySlug%>";window.open(e,"Share on Google Plus","width=500,height=436");return false}
       function openTwitter(){var e=["sinak","neutralthoughts","tforce"];randomize(e);var t="https://twitter.com/home?status=This Sunday, thousands around the country are rallying against surveillance. Join the event in <%=city.name%> -> http://1984day.com/<%=citySlug%>&related=Restore_the4th%2C<%=city.twitter%>%2C"+e[0]+"%2C"+e[1]+"%2C";window.open(t,"Twitter","width=550,height=420");return false}
     </script>  
-    
+
     <!-- Piwik -->
     <script type="text/javascript">
       var _paq = _paq || [];
