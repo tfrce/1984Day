@@ -6,6 +6,7 @@
   		"where":"Vaillancourt Fountain, The Embarcadero",
       "latlong": "37.794906,-122.394691",
   		"image": "",
+      "customtext": ", and specifically Rep. Nancy Pelosi's decision to vote against the Amash amendment to reduce surveillance last week",
       "event_id": 520390394700141,
       "speakers": [{
           "name": "Daniel Ellsberg",
@@ -36,7 +37,8 @@
       "where":"The Bryant Park",
       "image": "",
       "event_id": 508963769175983,
-      "twitter": "RestoreThe4thNY"
+      "twitter": "RestoreThe4thNY",
+      "customtext": ". In NY, we'll also be protesting Stop & Frisk, as well as the discriminatory surveillance of Muslim-Americans"
     }, {
       "name": "Los Angeles",
       "time": "1pm",
@@ -68,7 +70,7 @@
     }, {
       "name": "Boston",
       "time": "3pm",
-      "where":"Schroeder Plaza, Boston",
+      "where":"Schroeder Plaza",
       "image": "",
       "event_id": 549769355088618,
       "twitter": "RestoreThe4thMA"
@@ -94,6 +96,20 @@
       "event_id": 501911309885912,
       "twitter": "RestoreThe4thATX"
     }, {
+      "name": "Raleigh",
+      "time": "10:00am",
+      "where":"North Carolina State Capitol, 1 E. Edenton Street",
+      "image": "",
+      "event_id": 476528695773018,
+      "twitter": ""
+    }, {
+      "name": "Carson City",
+      "time": "10:00am",
+      "where":"Nevada Legislature, 401 S. Carson St.",
+      "image": "",
+      "event_id": 475479909213133,
+      "twitter": ""
+    },{
       "name": "Bellingham",
       "time": "6pm",
       "where":"Bellingham Public Market",

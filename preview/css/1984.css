@@ -166,7 +166,7 @@ body.event #features .option3 .feature .img {
 		font-size: 30px 	!important;
 		font-weight: bold;
 	}
-	article.slide#ideas {
+	.homepage article.slide#ideas {
 		background-size:14% !important;
 	}
 }
@@ -178,8 +178,8 @@ body.event #features .option3 .feature .img {
 		height: 450px;
 		margin-bottom:30px;
 	}
-	article.slide#ideas {
-		background-size:24% !important;
+	.homepage article.slide#ideas {
+		background-size:32% !important;
 	}
 	.slide#ideas .info img {
 		display: none;
@@ -193,7 +193,7 @@ body.event #features .option3 .feature .img {
 		font-weight: bold;
 	}
 	.slide#ideas .info {
-		top:50px;
+		top:10px;
 	}
 	.slide#ideas {
 		width: 90%;
