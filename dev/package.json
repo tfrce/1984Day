@@ -11,6 +11,7 @@
     "html-minifier": "~0.5.2",
     "uglify-js": "~2.3.6",
     "bitly": "~1.2.4",
-    "wrench": "~1.5.1"
+    "wrench": "~1.5.1",
+    "fs-extra": "~0.6.3"
   }
 }
