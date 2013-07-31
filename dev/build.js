@@ -3,7 +3,6 @@ var _ = require('underscore');
 var fs = require('fs');
 var http = require('http');
 var htmlMinifier = require('html-minifier');
-var uglifyJs = require('uglify-js');
 var path = require('path');
 function convertToSlug(Text) {return Text.toLowerCase().replace(/[^\w ]+/g,'').replace(/ +/g,'-');}
 
