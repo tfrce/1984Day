@@ -4,3 +4,4 @@ preview/node_modules/
 *.swp
 _site/*
 .DS_Store
+dev/_site/*
