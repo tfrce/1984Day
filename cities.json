@@ -148,14 +148,14 @@
       "custom_date": "Monday is 8/5"
     },{
       "name": "Salt Lake City",
-      "time": "11:00am",
+      "time": "11am",
       "where":"450 S Main St",
       "image": "",
       "event_id": "585743408144825",
       "twitter": ""
     },{
       "name": "San Antonio",
-      "time": "12:00pm",
+      "time": "12pm",
       "where":"Corner of Potranco and Military, San Antonio, Tx",
       "exactwhere": "Corner of Potranco and Military, San Antonio, Tx",
       "image": "",
@@ -163,7 +163,7 @@
       "twitter": ""
     },{
       "name": "Dallas",
-      "time": "10:00am",
+      "time": "10am",
       "where":"100 S Houston St",
       "image": "",
       "event_id": "560086554028430",
