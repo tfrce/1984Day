@@ -90,6 +90,7 @@ var social = {
             $('.google-button').attr('count', count);
         })
         var eventId = $('[data-event-id]').attr('data-event-id');
+        
         if(eventId){
             $.getJSON('http://sharing.taskforce.is/?type=facebook-event&url=/'+eventId+'/attending?summary=true', function(data) {
                 var count = data.summary.count;

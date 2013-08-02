@@ -176,8 +176,9 @@
                     <!-- Feature -->
                     <div class="span4 feature first" >
                         <div class="text" style="margin-top:0; margin-bottom:15px;">
-                            <a href="san-francisco"><h6>San Francisco</h6></a>
+                            <a href="san-francisco"><h6>San Francisco<span style="font-size: 11px; float:right;">over <span data-fb-id="520390394700141" class='attend-count'>0</span> attending</span></h6></a>
                             <span class="event-datetime">12pm</span>
+
                             <p>
                             <strong>The Embarcadero</strong>
                             </p>
@@ -194,7 +195,7 @@
                     <!-- Feature -->
                     <div class="span4 feature">
                         <div class="text" style="margin-top:0; margin-bottom:15px;">
-                            <a href="new-york"><h6>New York</h6></a>
+                            <a href="new-york"><h6>New York<span style="font-size: 11px; float:right;">over <span data-fb-id="508963769175983" class='attend-count'>0</span> attending</span></a></h6>
                             <span class="event-datetime">3pm</span>
                             <p>
                             <strong>Bryant Park, 42nd Street 6th Avenue</strong>
@@ -212,7 +213,7 @@
                     <!-- Feature -->
                     <div class="span4 feature last">
                         <div class="text" style="margin-top:0; margin-bottom:15px;"> 
-                            <a href="los-angeles"><h6>Los Angeles</h6></a>
+                            <a href="los-angeles"><h6>Los Angeles<span style="font-size: 11px; float:right;">over <span data-fb-id="206984139458886" class='attend-count'>0</span> attending</span></h6></a>
                             <span class="event-datetime">1pm</span>
                             <p>
                             <strong>3rd Street Promenade</strong>
@@ -521,6 +522,23 @@
         var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
         g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
       })();
+      function loadCity (city) {
+        
+            $.getJSON('http://sharing.taskforce.is/?type=facebook-event&url=/'+city+'/attending?summary=true', function(data) {
+                var count = data.summary.count;
+                console.log(count);
+                if (count > 50) {
+                    $('[data-fb-id="'+city+'"]').text(count);
+                }
+            })
+      }
+      $(document).ready(function () {
+        var cities = [520390394700141, 508963769175983, 206984139458886]; //, 356709431122317, 146490982217007, 687713187912713, 549769355088618, 212565428900036, 588749281176821, 501911309885912, 476528695773018, 475479909213133, 290601617747326, 359634850806912, 585743408144825];
+        for(var i = 0; i < cities.length; i++) {
+            var city = cities[i];
+            loadCity(city);
+        }
+      })
     </script>
     <!-- End Piwik Code -->
 </body>
