@@ -160,5 +160,12 @@
       "image": "",
       "event_id": "161112724075730",
       "twitter": ""
+    },{
+      "name": "Dallas",
+      "time": "10:00am",
+      "where":"100 S Houston St",
+      "image": "",
+      "event_id": "560086554028430",
+      "twitter": ""
     }]
 }
