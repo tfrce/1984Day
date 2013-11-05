@@ -37,7 +37,6 @@ fs.copy('.', '..', function(err){
     fs.writeFileSync('../css/styles.css', minimized, 'utf8');
     //cssIncImages('../css/styles.css');
     var indexPage = fs.readFileSync('../index.html', 'utf8');
-    indexPage = indexPage.replace('css/styles.css',cdn+'/css/styles.css?'+cdnversion);
     indexPage = htmlMinifier.minify(indexPage, htmlCompressionOptions);
     fs.writeFileSync('../index.html', indexPage, 'utf8');
     glob("../**/index.html", {}, function (er, files) {
@@ -46,7 +45,6 @@ fs.copy('.', '..', function(err){
       });
       _.each(files, function(filename){
         var indexPage = fs.readFileSync(filename, 'utf8');
-        indexPage = indexPage.replace('../css/styles.css',cdn+'/css/styles.css?'+cdnversion);
         indexPage = htmlMinifier.minify(indexPage, htmlCompressionOptions);
         fs.writeFileSync(filename, indexPage, 'utf8');
 
